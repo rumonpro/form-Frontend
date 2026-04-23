@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loader.style.display = 'block';
 
         try {
-            const response = await fetch('/send', {
+            const response = await fetch('https://form-frontend2.vercel.app/send', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
