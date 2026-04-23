@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Contact Form</title>
+    <!-- Use Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Css.css">
+</head>
+
+<body>
+    <div class="background-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Get In Touch</h2>
+            <p>We'd love to hear from you. Send us a message!</p>
+        </div>
+
+        <form id="contactForm" class="glass-form" novalidate>
+            <div class="input-group">
+                <i class="fa-solid fa-user icon"></i>
+                <input type="text" id="fullname" name="fullname" required autocomplete="off" placeholder=" ">
+                <label for="fullname">Your Name</label>
+                <div class="error-message"></div>
+            </div>
+
+            <div class="input-group">
+                <i class="fa-solid fa-envelope icon"></i>
+                <input type="email" id="email" name="email" required autocomplete="off" placeholder=" ">
+                <label for="email">Email Address</label>
+                <div class="error-message"></div>
+            </div>
+
+            <div class="input-group">
+                <i class="fa-solid fa-tag icon"></i>
+                <input type="text" id="subject" name="subject" required autocomplete="off" placeholder=" ">
+                <label for="subject">Subject</label>
+                <div class="error-message"></div>
+            </div>
+
+            <div class="input-group textarea-group">
+                <i class="fa-solid fa-comment-dots icon"></i>
+                <textarea id="message" name="message" required placeholder=" " rows="4"></textarea>
+                <label for="message">Your Message</label>
+                <div class="error-message"></div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <i class="fa-regular fa-paper-plane btn-icon"></i>
+                <div class="loader"></div>
+            </button>
+
+            <div class="success-message" id="successMessage">
+                <i class="fa-solid fa-circle-check"></i> Message sent successfully!
+            </div>
+        </form>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+
+</html>
